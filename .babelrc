@@ -1,5 +1,6 @@
 {
   "presets": [
+<<<<<<< HEAD
     ["env", {
       "modules": false,
       "targets": {
@@ -15,4 +16,8 @@
       "plugins": ["istanbul"]
     }
   }
+=======
+    ["env", { "modules": false }]
+  ]
+>>>>>>> 650209ecb08d7aa980a718df5b16ff66a8223491
 }
