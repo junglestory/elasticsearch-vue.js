@@ -1,30 +1,34 @@
 # elasticsearch-vue.js
+This application is a sample for Elasticsearch client with Vue.js and Bootstrap.
 
-> A Vue.js project
+## Features
+* MultiMatchQuery
+* Hightlight
+* Date Range
+* Filter
+* Sort
+* Aggregation
+* Paginated
 
-## Build Setup
+## Requirements
+* [Node.js](https://nodejs.org/en/download/)
+* [Vue-CLI](https://www.npmjs.com/package/vue-cli)
+* Elasticsearch requires 6.2 or higher
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
+## Soruce code clone
+git clone https://github.com/junglestory/elasticsearch-vue.js.git
+```shell
+$ cd elasticsearch-vue.js
+$ npm install
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Installation
+### Elasticsearch
+* [Download](https://www.elastic.co/downloads/elasticsearch) and unzip the Elasticsearch official distribution.
+* Run bin\elasticsearch
+* Run curl -X GET http://localhost:9200/
+* [Sampe data](https://github.com/junglestory/scrape_blog_crawler)
+
+
+## Develoment Server
+Run `npm run dev` for a dev server. Navigate to `http://localhost:8000/`. The app will automatically reload if you change any of the source files.
