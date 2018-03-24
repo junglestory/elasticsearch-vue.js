@@ -13,7 +13,6 @@ npm run dev
 
 # build for production with minification
 npm run build
-<<<<<<< HEAD
 
 # build for production and view the bundle analyzer report
 npm run build --report
@@ -29,8 +28,3 @@ npm test
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-=======
-```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
->>>>>>> 650209ecb08d7aa980a718df5b16ff66a8223491
