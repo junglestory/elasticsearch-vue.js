@@ -16,14 +16,13 @@ This application is a sample for Elasticsearch client with Vue.js and Bootstrap.
 * Elasticsearch requires 6.2 or higher
 
 ## Soruce code clone
-git clone https://github.com/junglestory/elasticsearch-vue.js.git
 ```shell
+$ git clone https://github.com/junglestory/elasticsearch-vue.js.git
 $ cd elasticsearch-vue.js
 $ npm install
 ```
 
 ## Installation
-### Elasticsearch
 * [Download](https://www.elastic.co/downloads/elasticsearch) and unzip the Elasticsearch official distribution.
 * Run bin\elasticsearch
 * Run curl -X GET http://localhost:9200/
