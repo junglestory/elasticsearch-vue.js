@@ -26,7 +26,7 @@ $ npm install
 * [Download](https://www.elastic.co/downloads/elasticsearch) and unzip the Elasticsearch official distribution.
 * Run bin\elasticsearch
 * Run curl -X GET http://localhost:9200/
-* [Sampe data](https://github.com/junglestory/scrape_blog_crawler)
+* [Sample data](https://github.com/junglestory/scrape_blog_crawler)
 
 
 ## Develoment Server
