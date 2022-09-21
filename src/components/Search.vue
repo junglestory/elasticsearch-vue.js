@@ -94,7 +94,7 @@
                               <span v-else v-html="item.highlight.title"></span>
                             </span>                            
                           </h4>
-                          <h4 class="m-b-xs" v-else>{{ item._source.title }}</h4>
+                          <h4 class="m-b-xs" v-else>{{ item._source.subject }}</h4>
                           {{ item._source.author }} / {{ item._source.category }}
                           </p>
                           <p v-if="typeof item.highlight !== 'undefined' && typeof item.highlight.desc !== 'undefined'">
@@ -154,8 +154,7 @@ export default {
   data () {
     return {
       query: '',
-      index: 'blogs',
-      type: 'blog',
+      index: 'blog',
       totalCount: 0,
       perPage: 10,
       pageNum: 1,
@@ -186,7 +185,7 @@ export default {
   },
   methods: {
     search: function () {
-      let query = ''
+      let query = this.query
       let date = ''
       let range = ''
       let must = ''
@@ -229,7 +228,6 @@ export default {
 
       client.search({
         index: this.index,
-        type: this.type,
         from: (this.pageNum - 1) * this.perPage,
         size: this.perPage,
         body: {
@@ -261,8 +259,7 @@ export default {
         this.items = []
         this.buckets = []
         const hits = body.hits.hits
-        console.log(hits)
-        this.totalCount = body.hits.total
+        this.totalCount = body.hits.total.value
         this.pageCount = Math.ceil(this.totalCount / this.perPage)
         hits.forEach(hit => {
           this.items.push(hit)
